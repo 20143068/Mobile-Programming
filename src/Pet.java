@@ -10,8 +10,9 @@ public class Pet {
 				+ "\nWeight: " + weight + " pounds");
 	}
 	
-	public Pet(String initialName, int initialAge, double initialWeight) {
+	public Pet(String initialName, int initialAge, double initialWeight, String name) {
 		 // 구현하시오.
+		this.name = name;
 	}
         // 오버로딩
 	public Pet(String initialName) {
@@ -40,23 +41,30 @@ public class Pet {
 	
 	public void setAge( int newAge) {
                // 구현하시오.
+		this.age = newAge;
 	}
 	
 	public void setWeight( double newWeight) {
 	      // 구현하시오.
+		this.weight = newWeight;
        }
 	
 	public String getName() {
 		// 구현하시오.
+		return name;
 	}
 	
 	public int getAge() {
 		// 구현하시오.
+		return age;
 	}
 	
 	public double getWeight() {
 		// 구현하시오.
+		return weight;
 	}
-}
 
+	public void setName(String name) {
+		this.name = name;
+	}
 }
